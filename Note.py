@@ -16,3 +16,4 @@ class Note:
         self.title = title
         self.body = body
         self.updated_at = datetime.now()
+
