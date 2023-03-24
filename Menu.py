@@ -13,6 +13,7 @@ class Menu:
             print("3. Редактировать заметку")
             print("4. Удалить заметку")
             print("5. Поиск заметки")
+            print("6. Выход")
             choice = input("Введите свой выбор (1-5): ")
             if choice == "1":
                 title = input("Введите название заметки: ")
@@ -31,9 +32,9 @@ class Menu:
             elif choice == "5":
                 id_note = input("Введите id заметки: ")
                 print(self.notes_app.find_note_by_id(int(id_note)))
-            elif choice == "0":
+            elif choice == "6":
                 break
             else:
-                print("Неверный выбор. Введите число от 1 до 5.")
+                print("Неверный выбор. Введите число от 1 до 6.")
 
 
